@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-USER"
+      "value": "tripdubroot"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "Aw3someP@ss"
     },
     "rhelOSVersion": {
       "value": "7.2"
