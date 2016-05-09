@@ -5,7 +5,7 @@ from azure.common.credentials import UserPassCredentials
 from azure.mgmt.resource.resources.models import ResourceGroup
 from azure.mgmt.resource.resources import ResourceManagementClient, ResourceManagementClientConfiguration
 from azure.mgmt.redis import RedisManagementClient, RedisManagementClientConfiguration
-from azure.mgmt.redis.models import * #RedisResource, RedisListKeysResult, Sku, RedisProperties, Resource, RedisCreateOrUpdateParameters
+from azure.mgmt.redis.models import *
 
 with open("az_config.json.pw") as data_file:
     data = json.load(data_file)
