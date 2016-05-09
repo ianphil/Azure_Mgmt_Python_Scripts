@@ -54,4 +54,3 @@ result = resource_client.resource_groups.create_or_update(
 )
 
 print "Created Resource Group:", group_name
-    
