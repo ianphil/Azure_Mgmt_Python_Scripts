@@ -1,13 +1,17 @@
 import redis
+import json
+
+with open("az_config.json") as data_file:
+    data = json.load(data_file)
 
 r = redis.StrictRedis(
-    host='sixshotcache.redis.cache.windows.net',
+    host=data["redis_host"],
     port=6380,
     db=0,
-    password='4NJYqV6/9+eP1eNu0SYaAunhb6IcgYkPnCt/Si0bsNI=',
+    password=data["redis_key"],
     ssl=True
 )
 
-r.set('foo', 'bar')
+# r.set('foo', 'bar')
 value = r.get('foo')
 print value 
